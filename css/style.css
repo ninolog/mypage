@@ -358,6 +358,101 @@ p {
   }
 }
 
+.top_main-wrapper {
+  width: 100%;
+  padding: 50px;
+}
+.top_main-wrapper .title-area {
+  position: relative;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px 50px 40px;
+  overflow: hidden;
+}
+.top_main-wrapper .title-area:before {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  right: -50px;
+  max-width: 300px;
+  max-height: 300px;
+  width: 27.2727272727vw;
+  height: 27.2727272727vw;
+  background-image: url(/images/common/title_bg_01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: 1;
+}
+.top_main-wrapper .title-area:after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -50px;
+  max-width: 300px;
+  max-height: 300px;
+  width: 27.2727272727vw;
+  height: 27.2727272727vw;
+  background-image: url(/images/common/title_bg_02.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: 1;
+}
+.top_main-wrapper .title-area .txt-area {
+  position: relative;
+  z-index: 2;
+}
+.top_main-wrapper .title-area h1 {
+  font-size: min(64px, 5.8181818182vw);
+  text-align: center;
+}
+.top_main-wrapper .title-area p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.section {
+  max-width: 1400px;
+  width: 71.4285714286vw;
+  margin: 0 auto;
+}
+.section .inner {
+  padding: 0 50px;
+}
+.section .inner .title-area {
+  text-align: center;
+  width: 100%;
+}
+
+h2 {
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+}
+h2:before {
+  content: "<!--";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -90px;
+  width: 100%;
+  height: 100%;
+}
+h2:after {
+  content: "-->";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -90px;
+  width: 100%;
+  height: 100%;
+}
+
 #wrapper {
   position: relative;
   min-height: 100vh;
@@ -541,29 +636,8 @@ p {
   font-size: 12px;
 }
 
-.top_main-wrapper {
-  width: 100%;
-  padding: 50px;
-}
-.top_main-wrapper .title-area {
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 20px 50px 40px;
-}
-.top_main-wrapper .title-area h1 {
-  font-size: min(64px, 5.8181818182vw);
-  text-align: center;
-}
-.top_main-wrapper .title-area p {
-  font-size: 16px;
-  text-align: center;
-  margin-top: 20px;
-}
-
 .top_main-section {
   margin: 0 auto;
-  max-width: 1400px;
-  width: 71.4285714286vw;
 }
 .top_main-section .main-section_inner {
   display: -webkit-box;
@@ -577,7 +651,6 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 50px;
 }
 .top_main-section .main-section_inner .content-area {
   max-width: 280px;
@@ -600,33 +673,6 @@ p {
 }
 .top_main-section .main-section_inner .content-area .txt-area {
   text-align: center;
-}
-.top_main-section .main-section_inner .content-area h2 {
-  display: inline-block;
-  font-size: 24px;
-  position: relative;
-}
-.top_main-section .main-section_inner .content-area h2:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: -70px;
-  width: 30px;
-  height: 1px;
-  background-color: #707070;
-}
-.top_main-section .main-section_inner .content-area h2:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: -70px;
-  width: 30px;
-  height: 1px;
-  background-color: #707070;
 }
 .top_main-section .main-section_inner .content-area .txt-box {
   margin-top: 30px;
@@ -668,4 +714,95 @@ p {
   right: 12px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.about_main-section .profile-area {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.about_main-section .profile-area .image-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about_main-section .profile-area .image-wrap .image-area {
+  max-width: 220px;
+  max-height: 220px;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #707070;
+}
+.about_main-section .profile-area .image-wrap .image-description {
+  margin-top: 20px;
+  text-align: center;
+}
+.about_main-section .profile-area .image-wrap .image-description p > span {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.about_main-section .profile-area .txt-wrap {
+  margin-left: 100px;
+}
+.about_main-section .profile-area .txt-wrap .txt-area {
+  margin-bottom: 20px;
+}
+.about_main-section .profile-area .txt-wrap h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.about_main-section .profile-area .txt-wrap h3:before {
+  content: "/*";
+  margin-right: 20px;
+}
+.about_main-section .profile-area .txt-wrap h3::after {
+  content: "*/";
+  margin-left: 20px;
+}
+.about_main-section .profile-area .txt-wrap p {
+  margin-bottom: 30px;
+}
+.about_main-section .profile-area .txt-wrap dl {
+  margin-bottom: 10px;
+}
+.about_main-section .profile-area .txt-wrap dl dt {
+  font-size: 14px;
+  font-weight: bold;
+}
+.about_main-section .profile-area .txt-wrap dl dt:before {
+  content: "{--";
+  margin-right: 5px;
+}
+.about_main-section .profile-area .txt-wrap dl dt::after {
+  content: "--}";
+  margin-left: 5px;
+}
+.about_main-section .profile-area .txt-wrap dl dd {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.about_main-section .profile-area .txt-wrap dl dd:before {
+  content: "//";
+  margin-right: 10px;
 }

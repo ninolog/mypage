@@ -60,11 +60,12 @@
               <a href="/"><img src="/images/common/logo.png" alt="とあるエンジニアのほのぼの日常"></a>
             </div>
             <div class="menu-area">
+              <?php $current_slug = basename($_SERVER['REQUEST_URI']); ?>
               <ul class="menu-list">
-                <li class="menu-item _active"><a href="/">ホーム</a></li>
-                <li class="menu-item"><a href="/about/">管理主について</a></li>
-                <li class="menu-item"><a href="/blog/">日常ブログ</a></li>
-                <li class="menu-item"><a href="/portfolio/">ポートフォリオ</a></li>
+                <li class="menu-item <?php if($current_slug == '') echo '_active'; ?>"><a href="/">ホーム</a></li>
+                <li class="menu-item <?php if($current_slug == 'about') echo '_active'; ?>"><a href="/about/">中の人について</a></li>
+                <li class="menu-item <?php if($current_slug == 'blog') echo '_active'; ?>"><a href="/blog/">日常ブログ</a></li>
+                <li class="menu-item <?php if($current_slug == 'works') echo '_active'; ?>"><a href="/works/">制作物一覧</a></li>
               </ul>
             </div>
           </div>
@@ -75,3 +76,13 @@
       </div><!-- /site_left-area -->
       <div class="site_right-area" id="page_top">
         <div class="right-area_inner">
+            <!-- top_main-wrapper -->
+            <div class="top_main-wrapper">
+              <div class="title-area">
+                <h1>Ninlog</h1>
+                <p>
+                  思いつきで作成したサイトにつき、コンテンツ迷子中。<br>
+                  ホームページ制作に関する日常や知識をつらつら。
+                </p>
+              </div>
+            </div><!-- /top_main-wrapper -->

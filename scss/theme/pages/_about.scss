@@ -1,0 +1,80 @@
+//----------------------------------------------------
+// About
+//----------------------------------------------------
+.about_main-section {
+  .profile-area {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .image-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .image-area {
+        max-width: 220px;
+        max-height: 220px;
+        width: calc( 220 / 1100 * 100vw );
+        height: calc( 220 / 1100 * 100vw );
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid $main-color;
+      }
+      .image-description {
+        margin-top: 20px;
+        text-align: center;
+        p > span {
+          display: block;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+    .txt-wrap {
+      margin-left: 100px;
+      .txt-area {
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        &:before {
+          content: '/*';
+          margin-right: 20px;
+        }
+        &::after {
+          content: '*/';
+          margin-left: 20px;
+        }
+      }
+      p {
+        margin-bottom: 30px;
+      }
+      dl {
+        margin-bottom: 10px;
+        dt {
+          font-size: 14px;
+          font-weight: bold;
+          &:before {
+            content: '{--';
+            margin-right: 5px;
+          }
+          &::after {
+            content: '--}';
+            margin-left: 5px;
+          }
+        }
+        dd {
+          margin: 10px 0;
+          font-size: 14px;
+          &:before {
+            content: '//';
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
