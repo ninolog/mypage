@@ -1,0 +1,21 @@
+//----------------------------------------------------
+// Top
+//----------------------------------------------------
+.top_main-wrapper {
+  width: 100%;
+  padding: 50px;
+  .title-area {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 70px 50px 100px;
+    h1 {
+      font-size: min(64px, calc(64 / 1100 * 100vw));
+      text-align: center;
+    }
+    p {
+      font-size: 16px;
+      text-align: center;
+      margin-top: 45px;
+    }
+  }
+}
