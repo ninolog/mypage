@@ -1,9 +1,9 @@
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/lib/header.php'); ?>
 
-  <section class="works_main-section section">
+  <section class="blog_main-section section">
       <div class="inner">
         <div class="title-area">
-          <h2>Portfolio</h2>
+          <h2>Blog</h2>
         </div>
       </div>
   </section>

@@ -5,7 +5,7 @@
     <div class="main-section_inner inner">
       <div class="content-area">
         <div class="txt-area">
-          <h2 class="content-title">About Me</h2>
+          <h2 class="content-title">About</h2>
           <p class="txt-box">
             とあるエンジニア。<br>
             中の人のプロフィールや<br>

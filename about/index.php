@@ -4,7 +4,7 @@
   <section class="about_main-section section">
     <div class="inner">
       <div class="title-area">
-        <h2>About Me</h2>
+        <h2>About</h2>
       </div>
       <div class="profile-area">
         <div class="image-wrap">

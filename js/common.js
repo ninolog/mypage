@@ -45,16 +45,15 @@ var menu = $('.sp-nav-block'), // スライドインするメニューを指定
     menuBtn = $('#sp-menu'), // メニューボタンを指定
     body = $(document.body),     
     menuWidth = menu.outerWidth();                
-     
     // メニューボタンをクリックした時の動き
     menuBtn.on('click', function(){
     // body に open クラスを付与する
 		menuBtn.toggleClass("active"); 
     body.toggleClass('modal');
         if(body.hasClass('modal')){
-             menu.fadeIn(500);
+          menu.fadeIn(500);
         } else {
-            menu.fadeOut(500);     
+          menu.fadeOut(500);     
         }            
     });
 });
@@ -129,10 +128,42 @@ $(document).ready(function(){
   $('a[href^="#"]').on('click', function(e) {
     e.preventDefault();
     var target = $(this).attr('href');
-    var targetOffset = $(target).offset().top;
-    $('html, body').animate({
-      scrollTop: targetOffset
-    }, 800);
+    console.log('Target:', target);  // targetをコンソールに出力
+    var targetOffset = $(target).offset();
+    
+    if(targetOffset) {  // targetOffsetが存在するかチェック
+      $('html, body').animate({
+        scrollTop: targetOffset.top
+      }, 800);
+    } else {
+      console.log(`Element ${target} could not be found.`);  // エラーメッセージを出力
+    }
   });
 });
 
+
+// pagination
+$(document).ready(function() {
+  const $dots = $('.pagination .dot');
+  const $pacman = $('.pagination .pacman');
+  const rdim = 30;
+  const ddim = 2; 
+
+  $dots.each(function(index, dot) {
+    $(dot).on('mouseover', function() {
+      const hoverDistance = (index * rdim) + ddim;
+      $pacman.css('transform', `translateX(${hoverDistance}px)`);
+      $pacman.addClass('pakupaku');
+    });
+
+    $(dot).on('mouseout', function() {
+      $pacman.removeClass('pakupaku');
+    });
+
+    $(dot).on('click', function(e) {
+      e.preventDefault();
+      const clickDistance = (index * rdim) + ddim;
+      $pacman.css('transform', `translateX(${clickDistance}px)`);
+    });
+  });
+});
