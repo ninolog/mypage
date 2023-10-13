@@ -14,13 +14,21 @@
           <div class="image-description">
             <p><span>Nino</span>（仮の姿）</p>
           </div>
+          <div class="sns-area">
+            <a href="https://twitter.com/nino_2v" target="_blank" rel="noopener noreferrer">
+              <img src="/images/about/x_logo.png" alt="X">
+            </a>
+            <a href="https://github.com/ninlog" target="_blank" rel="noopener noreferrer">
+              <img src="/images/about/github_logo.png" alt="X">
+            </a>
+          </div>
         </div><!-- /image-wrap -->
         <div class="txt-wrap">
           <div class="txt-area">
             <h3>Detail</h3>
             <p>
               とある田舎のエンジニア。好きなことで生きていく。<br>
-              ChatGPTなしでは生きられない。
+              しかしChatGPTなしでは生きられない。
             </p>
             <dl>
               <dt>Name</dt>
