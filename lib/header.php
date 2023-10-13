@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
 
-  <title>Ninlog</title>
+  <title>Ninolog</title>
 
   <link rel="stylesheet" href="/css/reset.css" media="all">
   <link rel="stylesheet" href="/css/style.css" media="all">
@@ -79,7 +79,7 @@
             <!-- top_main-wrapper -->
             <div class="top_main-wrapper">
               <div class="title-area">
-                <h1>Ninlog</h1>
+                <h1>Ninolog</h1>
                 <p>
                   思いつきで作成したサイトにつき、コンテンツ迷子中。<br>
                   ホームページ制作に関する日常や知識をつらつら。

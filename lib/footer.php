@@ -1,7 +1,7 @@
 </div><!-- /right-area_inner -->
 <footer class="footer">
   <div class="copy-right">
-    <p>Copyright &copy; 2023 Ninlog All Rights Reserved.</p>
+    <p>Copyright &copy; 2023 Ninolog All Rights Reserved.</p>
   </div>
 </footer>
 

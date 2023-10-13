@@ -162,17 +162,19 @@
               </div>
             </div>           
           </div> <!-- /blog-list -->
-          <div class="pagination">	
-            <a id="dot-1" href="#page1" class="dot"></a>
-            <a id="dot-2" href="#page2" class="dot"></a>
-            <a id="dot-3" href="#page3" class="dot"></a>
-            <a id="dot-4" href="#page1" class="dot"></a>
-            <a id="dot-5" href="#page2" class="dot"></a>
-            <a id="dot-6" href="#page3" class="dot"></a>
-            <a id="dot-7" href="#page1" class="dot"></a>
-            <a id="dot-8" href="#page2" class="dot"></a>
-            <a id="dot-9" href="#page3" class="dot"></a>
-            <div class="pacman"></div>
+          <div class="pagination-wrap">
+            <ul class="pagination">	
+              <li><a href="#page1" class="num _active"></a></li>
+              <li><a href="#page2" class="num"></a></li>
+              <li><a href="#page3" class="num"></a></li>
+              <li><a href="#page4" class="num"></a></li>
+              <li><a href="#page5" class="num"></a></li>
+              <li><a href="#page6" class="num"></a></li>
+              <li><a href="#page7" class="num"></a></li>
+              <li><a href="#page8" class="num"></a></li>
+              <li><a href="#page9" class="num"></a></li>
+              <div class="pacman"></div>
+            </ul>
           </div>
         </div> <!-- /blog-wrap -->
       </div> <!-- /inner -->

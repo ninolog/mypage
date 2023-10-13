@@ -11,9 +11,6 @@ $(function(){
     } 
 });
 
-
-
-
 //PC・SP
 $(function(){
 	var wid = $(window).width();
@@ -25,7 +22,6 @@ $(function(){
 			}
 });
 
-
 //スマホ時のみTELテキストで有効
 $(function(){
     var ua = navigator.userAgent;
@@ -36,8 +32,6 @@ $(function(){
         });
     }
 });
-
-
 
 //スマホ時メニュー開閉
 $(function(){
@@ -58,9 +52,6 @@ var menu = $('.sp-nav-block'), // スライドインするメニューを指定
     });
 });
 
-
-
-
 $(function () {
   /*初期表示*/
   $('.tab-contents').hide();
@@ -78,11 +69,6 @@ $(function () {
   });
 });
 
-
-
-
-
-
 $(document).ready(function(){
   $( '.history-list.more' ).hide();
   $('.btn-trigger').on( 'click' ,function(){
@@ -95,9 +81,6 @@ $(document).ready(function(){
     }
   });
 })
-
-
-
 
 //リサイズでスタイルリセット
 $(function(){
@@ -118,11 +101,6 @@ $(function(){
     });
 });
 
-
-
-
-
-
 /* ページトップ*/
 $(document).ready(function(){
   $('a[href^="#"]').on('click', function(e) {
@@ -141,29 +119,33 @@ $(document).ready(function(){
   });
 });
 
-
 // pagination
 $(document).ready(function() {
-  const $dots = $('.pagination .dot');
+  const $dots = $('.pagination .num');
   const $pacman = $('.pagination .pacman');
-  const rdim = 30;
+  const rdim = 34.5;
   const ddim = 2; 
+  let activeIndex = $('.pagination .num._active').index(); // indexは0から始まるので注意
 
+  // 初期位置
+  const initDistance = (activeIndex * rdim) + ddim;
+  $pacman.css('transform', `translateX(${initDistance}px)`);
+
+  // イベント
   $dots.each(function(index, dot) {
+    // hover
     $(dot).on('mouseover', function() {
       const hoverDistance = (index * rdim) + ddim;
       $pacman.css('transform', `translateX(${hoverDistance}px)`);
       $pacman.addClass('pakupaku');
     });
 
+    // hover解除
     $(dot).on('mouseout', function() {
+      const backToActiveDistance = (activeIndex * rdim) + ddim;
+      $pacman.css('transform', `translateX(${backToActiveDistance}px)`);
       $pacman.removeClass('pakupaku');
     });
-
-    $(dot).on('click', function(e) {
-      e.preventDefault();
-      const clickDistance = (index * rdim) + ddim;
-      $pacman.css('transform', `translateX(${clickDistance}px)`);
-    });
+    
   });
 });
