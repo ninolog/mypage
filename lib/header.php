@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
 
-  <title>タイトル</title>
+  <title>Ninlog</title>
 
   <link rel="stylesheet" href="/css/reset.css" media="all">
   <link rel="stylesheet" href="/css/style.css" media="all">
@@ -17,9 +17,13 @@
 
 
   <!-- jquey plugin css -->
-  <link rel="stylesheet" href="/css/plugin/slick.css" media="all">
-  <link rel="stylesheet" href="/css/plugin/slick-theme.css" media="all">
-  <link rel="stylesheet" href="/css/plugin/jquery.fancybox.css" media="all">
+  <link rel="stylesheet" href="/css/plugins/slick.css" media="all">
+  <link rel="stylesheet" href="/css/plugins/slick-theme.css" media="all">
+
+  <!-- js -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/slick.min.js"></script>
+  <script src="/js/common.js"></script>
 
 
   <!--[if lt IE 9]>
@@ -39,6 +43,7 @@
 <link rel="manifest" href="/images/favicons/manifest.json">
 <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="theme-color" content="#ffffff"> -->
+<link rel="icon" type="image/png" href="/images/common/favicon.ico">
 
   <!-- tracking coad -->
 
@@ -68,3 +73,5 @@
           </div>
         </header>
       </div><!-- /site_left-area -->
+      <div class="site_right-area" id="page_top">
+        <div class="right-area_inner">

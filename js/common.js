@@ -125,23 +125,14 @@ $(function(){
 
 
 /* ページトップ*/
-$(function() {
-	var topBtn = $('.page-top');	
-	topBtn.hide();
-	//スクロールが100に達したらボタン表示
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {
-			topBtn.fadeIn();
-		} else {
-			topBtn.fadeOut();
-		}
-	});
-	//スクロールしてトップ
-    topBtn.click(function () {
-		$('body,html').animate({
-			scrollTop: 0
-		}, 500);
-		return false;
-    });
+$(document).ready(function(){
+  $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+    var targetOffset = $(target).offset().top;
+    $('html, body').animate({
+      scrollTop: targetOffset
+    }, 800);
+  });
 });
 

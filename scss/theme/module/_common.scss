@@ -1,11 +1,12 @@
 //----------------------------------------------------
 // Common
 //----------------------------------------------------
-$font-family-base: 'Yomogi', sans-serif;
-$font-size-base: 16px;
+$font-family-base: 'Yomogi', 'Helvetica', 'Arial', 'sans-serif';
+$font-size-base: min(16px, calc(16 / 1100 * 100vw));
 $line-height-base: 1.428571429;
-$text-color: #707070;
-$body-bg: #ffffff;
+$main-color: #707070;
+$white-color: #ffffff;
+$white-bg: #ffffff;
 $main-bg: #F8F5F2;
 
 // ヘッダー幅の計算
@@ -19,8 +20,8 @@ body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
-  color: $text-color;
-  background-color: $body-bg;
+  color: $main-color;
+  background-color: $main-bg;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -50,20 +51,41 @@ p {
   .site-wrap {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    min-height: 100vh;
     .site_left-area {
       position: fixed;
       max-width: 300px;
       width: var(--left-area-width);
       height: 100vh;
+      background-color: $white-bg;
     }
     .site_right-area {
+      min-height: 100vh;
+      scroll-margin-top: 0;
       flex: 1;
       width: calc(100% - min(300px, var(--left-area-width)));
       margin-left: min(300px, var(--left-area-width));
       background-color: $main-bg;
-      height: 100vh;
       overflow-y: auto;
-    }
-  }
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .top_btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 150px;
+        width: calc( 150 / 1400 * 100vw );
+        max-height: 150px;
+        height: calc( 150 / 1400 * 100vw );
+        transition: .3s ease all;
+        &:hover {
+          bottom: 5px;
+          transition: .3s ease all;
+        }
+      }
+    } // end site_right-area
+  } // end site-wrap
 }
