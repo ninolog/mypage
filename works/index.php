@@ -41,7 +41,7 @@
                 </div>
               </div>
               <div class="work-item_detail-btn">
-                <a href="/work/detail.php">Detail</a>
+                <a href="/works/detail.php">Detail</a>
               </div>
             </div>
           </div> <!-- work-item -->
@@ -71,7 +71,7 @@
                 </div>
               </div>
               <div class="work-item_detail-btn">
-                <a href="/work/detail.php">Detail</a>
+                <a href="/works/detail.php">Detail</a>
               </div>
             </div>
           </div> <!-- work-item -->
@@ -101,7 +101,7 @@
                 </div>
               </div>
               <div class="work-item_detail-btn">
-                <a href="/work/detail.php">Detail</a>
+                <a href="/works/detail.php">Detail</a>
               </div>
             </div>
           </div> <!-- work-item -->
@@ -131,7 +131,7 @@
                 </div>
               </div>
               <div class="work-item_detail-btn">
-                <a href="/work/detail.php">Detail</a>
+                <a href="/works/detail.php">Detail</a>
               </div>
             </div>
           </div> <!-- work-item -->
@@ -161,7 +161,7 @@
                 </div>
               </div>
               <div class="work-item_detail-btn">
-                <a href="/work/detail.php">Detail</a>
+                <a href="/works/detail.php">Detail</a>
               </div>
             </div>
           </div> <!-- work-item -->
@@ -191,7 +191,7 @@
                 </div>
               </div>
               <div class="work-item_detail-btn">
-                <a href="/work/detail.php">Detail</a>
+                <a href="/works/detail.php">Detail</a>
               </div>
             </div>
           </div> <!-- work-item -->
@@ -221,7 +221,7 @@
                 </div>
               </div>
               <div class="work-item_detail-btn">
-                <a href="/work/detail.php">Detail</a>
+                <a href="/works/detail.php">Detail</a>
               </div>
             </div>
           </div> <!-- work-item -->

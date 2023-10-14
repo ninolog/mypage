@@ -26,11 +26,11 @@
                   <p class="blog-item_date">2020.01.01</p>
                   <h3 class="blog-item_title">ブログタイトルが入りますブログタイトルが入りますブログタイトルが入りますブログタイトルが入りますブログタイトルが入りますブログタイトルが入りますブログタイトルが入ります</h3>
                 </a>
-                <div class="blog-item_category">
-                  <a href="">Category1</a>
-                  <a href="">Category2</a>
-                  <a href="">Category3</a>
-                </div>
+                <ul class="blog-item_category">
+                  <li class="category-item"><a href="">Category1</a></li>
+                  <li class="category-item"><a href="">Category2</a></li>
+                  <li class="category-item"><a href="">Category3</a></li>
+                </ul>
               </div>
             </div>
             <div class="blog-item">
@@ -44,9 +44,9 @@
                   <p class="blog-item_date">2020.01.01</p>
                   <h3 class="blog-item_title">ブログタイトルが入ります</h3>
                 </a>
-                <div class="blog-item_category">
-                  <a href="">Category1</a>
-                </div>
+                <ul class="blog-item_category">
+                  <li class="category-item"><a href="">Category1</a></li>
+                </ul>
               </div>
             </div>
             <div class="blog-item">
@@ -60,9 +60,9 @@
                   <p class="blog-item_date">2020.01.01</p>
                   <h3 class="blog-item_title">ブログタイトルが入ります</h3>
                 </a>
-                <div class="blog-item_category">
-                  <a href="">Category1</a>
-                </div>
+                <ul class="blog-item_category">
+                  <li class="category-item"><a href="">Category1</a></li>
+                </ul>
               </div>
             </div>
             <div class="blog-item">
@@ -76,9 +76,9 @@
                   <p class="blog-item_date">2020.01.01</p>
                   <h3 class="blog-item_title">ブログタイトルが入ります</h3>
                 </a>
-                <div class="blog-item_category">
-                  <a href="">Category1</a>
-                </div>
+                <ul class="blog-item_category">
+                  <li class="category-item"><a href="">Category1</a></li>
+                </ul>
               </div>
             </div>
             <div class="blog-item">
@@ -92,9 +92,9 @@
                   <p class="blog-item_date">2020.01.01</p>
                   <h3 class="blog-item_title">ブログタイトルが入ります</h3>
                 </a>
-                <div class="blog-item_category">
-                  <a href="">Category1</a>
-                </div>
+                <ul class="blog-item_category">
+                  <li class="category-item"><a href="">Category1</a></li>
+                </ul>
               </div>
             </div>
             <div class="blog-item">
@@ -108,9 +108,9 @@
                   <p class="blog-item_date">2020.01.01</p>
                   <h3 class="blog-item_title">ブログタイトルが入ります</h3>
                 </a>
-                <div class="blog-item_category">
-                  <a href="">Category1</a>
-                </div>
+                <ul class="blog-item_category">
+                  <li class="category-item"><a href="">Category1</a></li>
+                </ul>
               </div>
             </div>
             <div class="blog-item">
@@ -124,9 +124,9 @@
                   <p class="blog-item_date">2020.01.01</p>
                   <h3 class="blog-item_title">ブログタイトルが入ります</h3>
                 </a>
-                <div class="blog-item_category">
-                  <a href="">Category1</a>
-                </div>
+                <ul class="blog-item_category">
+                  <li class="category-item"><a href="">Category1</a></li>
+                </ul>
               </div>
             </div>
             <div class="blog-item">
@@ -140,9 +140,9 @@
                   <p class="blog-item_date">2020.01.01</p>
                   <h3 class="blog-item_title">ブログタイトルが入ります</h3>
                 </a>
-                <div class="blog-item_category">
-                  <a href="">Category1</a>
-                </div>
+                <ul class="blog-item_category">
+                  <li class="category-item"><a href="">Category1</a></li>
+                </ul>
               </div>
             </div>
             <div class="blog-item">
@@ -156,9 +156,9 @@
                   <p class="blog-item_date">2020.01.01</p>
                   <h3 class="blog-item_title">ブログタイトルが入ります</h3>
                 </a>
-                <div class="blog-item_category">
-                  <a href="">Category1</a>
-                </div>
+                <ul class="blog-item_category">
+                  <li class="category-item"><a href="">Category1</a></li>
+                </ul>
               </div>
             </div>           
           </div> <!-- /blog-list -->

@@ -120,23 +120,31 @@
             transition: .3s ease all;
           }
           .blog-item_category {
+            display: flex;
+            flex-wrap: wrap;
             border-top: 1px solid $main-color;
             margin-top: 10px;
-            padding-top: 5px;
-          }
-          .blog-item_category > a {
-            font-size: 12px;
-            &:before {
-              content: '/';
-              position: relative;
-              top: 50%;
-              transform: translateY(-50%);
-              left: -5px;
+            padding-top: 10px;
+            .category-item {
+              font-size: 12px;
+              &:before {
+                content: '/';
+                display: inline-block;
+                padding: 0 5px;
+              }
+              &:first-child:before {
+                display: none;
+              }
+              a {
+                opacity: 1;
+                transition: .3s ease all;
+                &:hover {
+                  opacity: 0.5;
+                  transition: .3s ease all;
+                }
+              }
             }
-            &:first-child:before {
-              display: none;
-            }
-          }
+          } // end blog-item_category
         } // end blog-item_txt
       } // end blog-item
     } // end blog-list
@@ -250,7 +258,7 @@ $pm: #dada00;
 }
 
 //----------------------------------------------------
-// Blog 詳細
+// Blog Detail
 //----------------------------------------------------
 .blog_detail-box {
   margin-top: 70px;
@@ -280,8 +288,13 @@ $pm: #dada00;
             top: 0;
             right: -15px;
           }
-          &:hover {
-            opacity: 0.6;
+          a {
+            opacity: 1;
+            transition: .3s ease all;
+            &:hover {
+              opacity: 0.5;
+              transition: .3s ease all;
+            }
           }
         }
       }

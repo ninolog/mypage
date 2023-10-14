@@ -149,3 +149,25 @@ $(document).ready(function() {
     
   });
 });
+
+// modal window
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('modal01');
+  const modalLink = document.querySelector('.modalOpen');
+  const closeBtn = modal.querySelector('.modal__close');
+
+  modalLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    modal.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+});

@@ -14,7 +14,9 @@
   <link rel="stylesheet" href="/css/reset.css" media="all">
   <link rel="stylesheet" href="/css/style.css" media="all">
   <!-- WebFonts -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Yomogi&display=swap" rel="stylesheet">
 
   <!-- jquey plugin css -->
   <link rel="stylesheet" href="/css/plugins/slick.css" media="all">
