@@ -18,8 +18,8 @@
             <a href="https://twitter.com/nino_2v" target="_blank" rel="noopener noreferrer">
               <img src="/images/about/x_logo.png" alt="X">
             </a>
-            <a href="https://github.com/ninlog" target="_blank" rel="noopener noreferrer">
-              <img src="/images/about/github_logo.png" alt="X">
+            <a href="https://github.com/ninolog" target="_blank" rel="noopener noreferrer">
+              <img src="/images/about/github_logo.png" alt="github">
             </a>
           </div>
         </div><!-- /image-wrap -->
