@@ -164,10 +164,10 @@
           </div> <!-- /blog-list -->
           <div class="pagination-wrap">
             <ul class="pagination">	
-              <li><a href="#page1" class="num _active"></a></li>
+              <li><a href="#page1" class="num"></a></li>
               <li><a href="#page2" class="num"></a></li>
               <li><a href="#page3" class="num"></a></li>
-              <li><a href="#page4" class="num"></a></li>
+              <li><a href="#page4" class="num _active"></a></li>
               <li><a href="#page5" class="num"></a></li>
               <li><a href="#page6" class="num"></a></li>
               <li><a href="#page7" class="num"></a></li>

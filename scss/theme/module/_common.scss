@@ -28,7 +28,7 @@ body {
 }
 @include mq(sp) { 
   body {
-    font-size: calc(16 / 375 * 100vw);
+    font-size: min(18px,calc(16 / 375 * 100vw));
   }
 }
 
@@ -121,7 +121,7 @@ p {
       text-align: center;
       margin-top: 20px;
       @include mq(sp) { 
-        font-size: calc(14 / 375 * 100vw);
+        font-size: min(16px,calc(14 / 375 * 100vw));
       }
     }
   }
@@ -156,7 +156,7 @@ h2 {
   font-size: 24px;
   position: relative;
   @include mq(sp) { 
-    font-size: calc( 24 / 375 * 100vw );
+    font-size: min(24px,calc( 24 / 375 * 100vw ));
   }
   &:before {
     content: '<!--';
@@ -186,11 +186,11 @@ h2 {
 
 #wrapper {
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
   .site-wrap {
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
+    min-height: 100%;
     @include mq(sp) {
       position: relative;
       flex-direction: column;
@@ -199,7 +199,7 @@ h2 {
       position: fixed;
       max-width: 300px;
       width: var(--left-area-width);
-      height: 100vh;
+      height: 100%;
       background-color: $white-bg;
       @include mq(sp) {
         position: fixed;

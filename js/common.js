@@ -125,7 +125,7 @@ $(document).ready(function() {
   const $pacman = $('.pagination .pacman');
   const rdim = 34.5;
   const ddim = 2; 
-  let activeIndex = $('.pagination .num._active').index(); // indexは0から始まるので注意
+  let activeIndex = $('.pagination .num').index($('.pagination .num._active'));
 
   // 初期位置
   const initDistance = (activeIndex * rdim) + ddim;

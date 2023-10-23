@@ -46,7 +46,7 @@
           color: $main-color;
           transition: .3s ease all;
           @include mq(sp) { 
-            font-size: calc( 12 / 375 * 100vw );
+            font-size: min(14px, calc( 12 / 375 * 100vw ));
           }
           &:before {
             content: '';
@@ -77,7 +77,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      @include mq(sp) { 
+      @include mq(tab) { 
         margin-top: 50px;
       }
       .work-item {
@@ -89,7 +89,7 @@
         margin-bottom: 70px;
         border: 1px solid $main-color;
         border-radius: 4px;
-        @include mq(sp) { 
+        @include mq(tab) { 
           flex-direction: column;
           padding: 15px;
           margin-bottom: 50px;
@@ -98,7 +98,7 @@
           width: 50%;
           border-radius: 4px;
           overflow: hidden;
-          @include mq(sp) { 
+          @include mq(tab) { 
             width: 100%;
             margin-bottom: 30px;
           }
@@ -108,7 +108,7 @@
           flex-direction: column;
           width: 50%;
           padding-left: 50px;
-          @include mq(sp) { 
+          @include mq(tab) { 
             width: 100%;
             padding-left: 0;
           }
@@ -116,20 +116,20 @@
             font-size: min(18px, calc( 18 / 1100 * 100vw ));
             font-weight: bold;
             margin-bottom: 10px;
-            @include mq(sp) { 
-              font-size: calc( 14 / 375 * 100vw );
+            @include mq(tab) { 
+              font-size: min(18px,calc( 14 / 375 * 100vw ));
             }
             &:before {
               content: '/*';
               margin-right: 20px;
-              @include mq(sp) { 
+              @include mq(tab) { 
                 margin-right: 10px;
               }
             }
             &::after {
               content: '*/';
               margin-left: 20px;
-              @include mq(sp) { 
+              @include mq(tab) { 
                 margin-left: 10px;
               }
             }
@@ -154,8 +154,8 @@
               color: $main-color;
               padding: 0 10px;
               transition: .3s ease all;
-              @include mq(sp) { 
-                font-size: calc( 12 / 375 * 100vw );
+              @include mq(tab) { 
+                font-size: min(14px,calc( 12 / 375 * 100vw ));
               }
               &:hover {
                 opacity: 0.6;
@@ -172,8 +172,8 @@
                 font-weight: bold;
                 border-bottom: 1px solid $main-color;
                 padding-bottom: 10px;
-                @include mq(sp) { 
-                  font-size: calc( 14 / 375 * 100vw );
+                @include mq(tab) { 
+                  font-size: min(16px,calc( 14 / 375 * 100vw ));
                 }
                 &:before {
                   content: '//';
@@ -190,8 +190,8 @@
                 .detail-item {
                   font-size: 14px;
                   font-weight: bold;
-                  @include mq(sp) { 
-                    font-size: calc( 12 / 375 * 100vw );
+                  @include mq(tab) { 
+                    font-size: min(14px,calc( 12 / 375 * 100vw ));
                   }
                   a {
                     display: inline-block;
@@ -211,8 +211,8 @@
                 margin-top: 10px;
                 font-size: 14px;
                 font-weight: bold;
-                @include mq(sp) { 
-                  font-size: calc( 12 / 375 * 100vw );
+                @include mq(tab) { 
+                  font-size: min(14px,calc( 12 / 375 * 100vw ));
                 }
               }
             }
@@ -229,8 +229,8 @@
               font-weight: bold;
               color: $main-color;
               transition: .3s ease all;
-              @include mq(sp) { 
-                font-size: calc( 12 / 375 * 100vw );
+              @include mq(tab) { 
+                font-size: min(14px,calc( 12 / 375 * 100vw ));
               }
               &:hover {
                 color: $white-color;
@@ -267,7 +267,7 @@
     padding-left: 2rem;
     text-indent: -2rem;
     @include mq(sp) { 
-      font-size: calc( 18 / 375 * 100vw );
+      font-size: min(24px,calc( 18 / 375 * 100vw ));
     }
     &:after {
       display: none;
@@ -305,7 +305,7 @@
       padding: 0 10px;
       transition: .3s ease all;
       @include mq(sp) { 
-        font-size: calc( 12 / 375 * 100vw );
+        font-size: min(14px,calc( 12 / 375 * 100vw ));
       }
       &:hover {
         opacity: 0.6;
@@ -323,7 +323,8 @@
     position: relative;
     opacity: 1;
     transition: .3s ease all;
-    @include mq(sp) { 
+    @include mq(tab) { 
+      max-height: 300px;
       height: calc( 200 / 375 * 100vw );
     }
     &:hover {
@@ -346,7 +347,7 @@
       font-weight: bold;
       margin-bottom: 15px;
       @include mq(sp) { 
-        font-size: calc( 16 / 375 * 100vw );
+        font-size: min(16px,calc( 16 / 375 * 100vw ));
       }
       &:before {
         content: '/*';
@@ -403,7 +404,7 @@
           margin-bottom: 10px;
           padding-bottom: 10px;
           @include mq(sp) { 
-            font-size: calc( 16 / 375 * 100vw );
+            font-size: min(16px, calc( 16 / 375 * 100vw ));
           }
           &:before {
             content: '//';
@@ -478,7 +479,7 @@
     transform: translate(-50%, -50%);
     border-radius: 4px;
     overflow: hidden;
-    @include mq(sp) { 
+    @include mq(tab) { 
       width: 95%;
     }
     img {

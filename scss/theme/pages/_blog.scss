@@ -43,7 +43,7 @@
           color: $main-color;
           transition: .3s ease all;
           @include mq(sp) { 
-            font-size: calc( 12 / 375 * 100vw );
+            font-size: min(14px,calc( 12 / 375 * 100vw ));
           }
           &:before {
             content: '';
@@ -229,7 +229,8 @@ $pm: #dada00;
     }
     &._active {
       pointer-events: none;
-      display: none;
+      background-color: #dada00;
+      border: 1px solid #dada00;
     }
   }
   
@@ -294,7 +295,7 @@ $pm: #dada00;
   background-color: #fff;
   padding: 30px 50px;
   border-radius: 4px;
-  @include mq(sp) { 
+  @include mq(tab) { 
     margin-top: 50px;
     padding: 30px;
   }
@@ -304,14 +305,14 @@ $pm: #dada00;
       justify-content: space-between;
       align-items: flex-start;
       font-size: 14px;
-      @include mq(sp) { 
+      @include mq(tab) { 
         flex-direction: column;
         justify-content: flex-start;
       }
       .blog-category {
         display: flex;
         gap: 30px;
-        @include mq(sp) { 
+        @include mq(tab) { 
           margin-top: 10px;
           margin-left: 10px;
         }
@@ -346,8 +347,8 @@ $pm: #dada00;
       margin: 25px 0 35px;
       padding-left: 1rem;
       text-indent: -1rem;
-      @include mq(sp) { 
-        font-size: calc(24 / 375 * 100vw);
+      @include mq(tab) { 
+        font-size: min(32px,calc(24 / 375 * 100vw));
       }
       &::before {
         content: "";
@@ -358,7 +359,7 @@ $pm: #dada00;
         width: 1px;
         height: 2rem;
         background-color: #707070;
-        @include mq(sp) { 
+        @include mq(tab) { 
           height: 1.5rem;
         }
       }
@@ -368,7 +369,7 @@ $pm: #dada00;
     padding: 30px 20px;
     border-radius: 4px;
     border: 1px solid $main-color;
-    @include mq(sp) { 
+    @include mq(tab) { 
       padding: 0;
       border: none;
     }
@@ -377,8 +378,8 @@ $pm: #dada00;
       border-bottom: 1px solid $main-color;
       padding: 10px;
       font-weight: bold;
-      @include mq(sp) { 
-        font-size: calc( 18 / 375 * 100vw );
+      @include mq(tab) { 
+        font-size: min(24px,calc( 18 / 375 * 100vw ));
       }
     }
     h2 {
@@ -390,8 +391,8 @@ $pm: #dada00;
       &:before, &:after {
         display: none;
       }
-      @include mq(sp) { 
-        font-size: calc( 16 / 375 * 100vw );
+      @include mq(tab) { 
+        font-size: min(20px,calc( 16 / 375 * 100vw ));
       }
     }
     h3 {
@@ -400,21 +401,21 @@ $pm: #dada00;
       padding: 10px;
       font-weight: bold;
       margin: 0;
-      @include mq(sp) { 
-        font-size: calc( 14 / 375 * 100vw );
+      @include mq(tab) { 
+        font-size: min(18px,calc( 14 / 375 * 100vw ));
       }
     }
     p {
       padding: 10px 0;
-      @include mq(sp) { 
-        font-size: calc( 14 / 375 * 100vw );
+      @include mq(tab) { 
+        font-size: min(16px,calc( 14 / 375 * 100vw ));
       }
     }
     img {
       border-radius: 4px;
-      width: 80%;
+      width: 100%;
       padding: 10px 0;
-      @include mq(sp) { 
+      @include mq(tab) { 
         width: 100%;
       }
     }
