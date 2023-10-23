@@ -1660,6 +1660,167 @@ h2:after {
   transition: 0.3s ease all;
 }
 
+.contact-area {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 70px 20px;
+}
+.contact-area .contact_txt-box {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.contact-area .contact_txt-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.contact-area .contact_txt-box h3:before {
+  content: "/*";
+  margin-right: 20px;
+}
+.contact-area .contact_txt-box h3::after {
+  content: "*/";
+  margin-left: 20px;
+}
+.contact-area .contact_txt-box p {
+  margin-top: 50px;
+  line-height: 2;
+}
+.contact-area .contact-form {
+  width: 90%;
+  margin: 70px auto 0;
+}
+.contact-area .contact-form .form-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.contact-area .contact-form .form-item label {
+  width: 7rem;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 50px;
+  padding: 15px 0;
+}
+.contact-area .contact-form .form-item input, .contact-area .contact-form .form-item textarea {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #707070;
+  border-radius: 4px;
+}
+.contact-area .contact-form .form-item p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  padding: 13px 0 15px;
+}
+.contact-area .contact-form .form-item input::-webkit-input-placeholder, .contact-area .contact-form .form-item textarea::-webkit-input-placeholder {
+  color: #707070;
+  opacity: 0.5;
+}
+.contact-area .contact-form .form-item input::-moz-placeholder, .contact-area .contact-form .form-item textarea::-moz-placeholder {
+  color: #707070;
+  opacity: 0.5;
+}
+.contact-area .contact-form .form-item input:-ms-input-placeholder, .contact-area .contact-form .form-item textarea:-ms-input-placeholder {
+  color: #707070;
+  opacity: 0.5;
+}
+.contact-area .contact-form .form-item input::-ms-input-placeholder, .contact-area .contact-form .form-item textarea::-ms-input-placeholder {
+  color: #707070;
+  opacity: 0.5;
+}
+.contact-area .contact-form .form-item input::placeholder, .contact-area .contact-form .form-item textarea::placeholder {
+  color: #707070;
+  opacity: 0.5;
+}
+.contact-area .contact-form .form-item._submit {
+  width: 300px;
+  font-weight: bold;
+  text-align: center;
+  margin: 100px auto 0;
+}
+.contact-area .contact-form .form-item._submit input {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact-area .contact-form .form-item._submit input:hover {
+  color: #ffffff;
+  background-color: #707070;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact-area .contact-form .form-item._confirm-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  text-align: center;
+  margin: 100px auto 0;
+}
+.contact-area .contact-form .form-item._confirm-submit a {
+  max-width: 300px;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact-area .contact-form .form-item._confirm-submit a:hover {
+  color: #ffffff;
+  background-color: #707070;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact-area .contact-form .form-item._confirm-submit input {
+  max-width: 300px;
+  width: 300px;
+  margin-left: 4%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contact-area .contact-form .form-item._confirm-submit input:hover {
+  color: #ffffff;
+  background-color: #707070;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact_main-section .back-btn {
+  margin: 70px auto 0;
+  text-align: center;
+}
+.contact_main-section .back-btn a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  font-size: 14px;
+  font-weight: bold;
+  color: #707070;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+.contact_main-section .back-btn a:hover {
+  background-color: #707070;
+  color: #ffffff;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
 .works_main-section .work-wrap {
   margin: 70px 0;
 }
