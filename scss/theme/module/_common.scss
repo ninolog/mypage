@@ -1,6 +1,7 @@
 //----------------------------------------------------
 // Common
 //----------------------------------------------------
+
 $font-family-base: 'Yomogi', 'Helvetica', 'Arial', 'sans-serif';
 $font-size-base: min(16px, calc(16 / 1100 * 100vw));
 $line-height-base: 1.428571429;
@@ -11,10 +12,8 @@ $main-bg: #F8F5F2;
 
 // ヘッダー幅の計算
 :root {
-  --left-area-width: calc(300 / 1400 * 100vw);
+  --left-area-width: calc( 300 / 1400 * 100vw );
 }
-// ブレイクポイント
-$breakpoint: 768px;
 
 body {
   font-family: $font-family-base;
@@ -27,6 +26,11 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+@include mq(sp) { 
+  body {
+    font-size: calc(16 / 375 * 100vw);
+  }
+}
 
 p {
   line-height: 1.8;
@@ -34,13 +38,13 @@ p {
 
 .pc-block {
   display: block;
-  @media screen and (max-width: $breakpoint) {
+  @include mq(sp) {
     display: none!important;
   }
 }
 .sp-block {
   display: none;
-  @media screen and (max-width: $breakpoint) {
+  @include mq(sp) {
     display: block!important;
   }
 }
@@ -48,12 +52,18 @@ p {
 .top_main-wrapper {
   width: 100%;
   padding: 50px;
+  @include mq(sp) {
+    padding:  80px 20px 50px;
+  }
   .title-area {
     position: relative;
     background-color: #fff;
     border-radius: 4px;
     padding: 20px 50px 40px;
     overflow: hidden;
+    @include mq(sp) { 
+      padding: 20px 20px 30px;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -68,6 +78,14 @@ p {
       background-repeat: no-repeat;
       opacity: 0.5;
       z-index: 1;
+      @include mq(sp) { 
+        bottom: -145px;
+        right: -110px;
+        width: 300px;
+        height: 300px;
+        opacity: 0.3;
+        z-index: 0;
+      }
     }
     &:after {
       content: "";
@@ -83,6 +101,9 @@ p {
       background-repeat: no-repeat;
       opacity: 0.5;
       z-index: 1;
+      @include mq(sp) { 
+        display: none;
+      }
     }
     .txt-area {
       position: relative;
@@ -91,11 +112,17 @@ p {
     h1 {
       font-size: min(64px, calc(64 / 1100 * 100vw));
       text-align: center;
+      @include mq(sp) {
+        font-size: calc(40 / 375 * 100vw);
+      }
     }
     p {
       font-size: 16px;
       text-align: center;
       margin-top: 20px;
+      @include mq(sp) { 
+        font-size: calc(14 / 375 * 100vw);
+      }
     }
   }
 }
@@ -104,8 +131,18 @@ p {
   max-width: 1400px;
   width: calc( 1000 / 1400 * 100vw );
   margin: 0 auto;
+  @include mq(sp) { 
+    max-width: 100%;
+    width: 90%;
+  }
   .inner {
     padding: 0 50px;
+    @include mq(tab) { 
+      padding: 0 20px;
+    }
+    @include mq(sp) { 
+      padding: 0;
+    }
     .title-area {
       text-align: center;
       width: 100%;
@@ -118,6 +155,9 @@ h2 {
   display: inline-block;
   font-size: 24px;
   position: relative;
+  @include mq(sp) { 
+    font-size: calc( 24 / 375 * 100vw );
+  }
   &:before {
     content: '<!--';
     position: absolute;
@@ -126,6 +166,9 @@ h2 {
     left: -90px;
     width: 100%;
     height: 100%;
+    @include mq(sp) { 
+      left: min(-90, calc( -90 / 375 * 100vw ));
+    }
   }
   &:after {
     content: '-->';
@@ -135,6 +178,9 @@ h2 {
     right: -90px;
     width: 100%;
     height: 100%;
+    @include mq(sp) { 
+      right: min(-90, calc( -90 / 375 * 100vw ));
+    }
   }
 }
 
@@ -145,12 +191,30 @@ h2 {
     display: flex;
     flex-direction: row;
     min-height: 100vh;
+    @include mq(sp) {
+      position: relative;
+      flex-direction: column;
+    }
     .site_left-area {
       position: fixed;
       max-width: 300px;
       width: var(--left-area-width);
       height: 100vh;
       background-color: $white-bg;
+      @include mq(sp) {
+        position: fixed;
+        z-index: 2;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        left: -100vw;
+        top: 0;
+        transition: .3s ease all;
+        &.open {
+          left: 0;
+          transition: .3s ease all;
+        }
+      }
     }
     .site_right-area {
       min-height: 100vh;
@@ -165,6 +229,10 @@ h2 {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      @include mq(sp) {
+        width: 100%;
+        margin-left: 0;
+      }
       .top_btn {
         position: absolute;
         bottom: 0;
@@ -174,9 +242,17 @@ h2 {
         max-height: 150px;
         height: calc( 150 / 1400 * 100vw );
         transition: .3s ease all;
+        @include mq(sp) { 
+          bottom: 45px;
+          width: 120px;
+          height: 120px;
+        }
         &:hover {
           bottom: 5px;
           transition: .3s ease all;
+          @include mq(sp) { 
+            bottom: 50px;
+          }
         }
       }
     } // end site_right-area

@@ -171,3 +171,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+// toggle menu
+$(function(){
+  $('.toggle-menu').click(function(){
+    $(this).toggleClass('active');
+    $('.site_left-area').toggleClass('open');
+  });
+});

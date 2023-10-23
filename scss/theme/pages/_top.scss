@@ -8,6 +8,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    @include mq(sp) { 
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .content-area {
       max-width: 280px;
       width: calc( 300 / 1400 * 100vw );
@@ -17,6 +22,11 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      @include mq(sp) { 
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
       .txt-area {
         text-align: center;
       }
@@ -32,6 +42,9 @@
         position: relative;
         background-color: $white-color;
         transition: all 0.3s ease;
+        @include mq(sp) { 
+          margin-top: 30px;
+        }
         &:before {
           content: '';
           display: block;

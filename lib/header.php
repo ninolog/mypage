@@ -75,7 +75,15 @@
             <a href="/contact/"><img src="/images/common/contact.png" alt="お問い合わせ"></a>
           </div>
         </header>
+        <div class="toggle-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div><!-- /site_left-area -->
+      <div class="sp-logo">
+        <a href="/"><img src="/images/common/title_bg_01.png" alt="とあるエンジニアのほのぼの日常"></a>
+      </div>
       <div class="site_right-area" id="page_top">
         <div class="right-area_inner">
             <!-- top_main-wrapper -->
@@ -83,8 +91,8 @@
               <div class="title-area">
                 <h1>Ninolog</h1>
                 <p>
-                  思いつきで作成したサイトにつき、コンテンツ迷子中。<br>
-                  ホームページ制作に関する日常や知識をつらつら。
+                  思いつきで作成したサイトにつき、<br class="sp-block">コンテンツ迷子中。<br>
+                  ホームページ制作に関する<br class="sp-block">日常や知識をつらつら。
                 </p>
               </div>
             </div><!-- /top_main-wrapper -->

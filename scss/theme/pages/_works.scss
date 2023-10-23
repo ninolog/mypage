@@ -4,15 +4,24 @@
 .works_main-section {
   .work-wrap {
     margin: 70px 0;
+    @include mq(sp) { 
+      margin: 50px 0;
+    }
     .category-area {
       width: 80%;
       margin: 0 auto;
+      @include mq(sp) { 
+        width: 100%;
+      }
       .category-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 30px;
+        @include mq(sp) { 
+          gap: 10px 30px;
+        }
         .category-item {
           position: relative;
           opacity: 0.8;
@@ -36,6 +45,9 @@
           font-weight: bold;
           color: $main-color;
           transition: .3s ease all;
+          @include mq(sp) { 
+            font-size: calc( 12 / 375 * 100vw );
+          }
           &:before {
             content: '';
             position: absolute;
@@ -65,6 +77,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @include mq(sp) { 
+        margin-top: 50px;
+      }
       .work-item {
         width: 100%;
         display: flex;
@@ -74,27 +89,49 @@
         margin-bottom: 70px;
         border: 1px solid $main-color;
         border-radius: 4px;
+        @include mq(sp) { 
+          flex-direction: column;
+          padding: 15px;
+          margin-bottom: 50px;
+        }
         .work-item_img {
           width: 50%;
           border-radius: 4px;
           overflow: hidden;
+          @include mq(sp) { 
+            width: 100%;
+            margin-bottom: 30px;
+          }
         }
         .work-item_txt {
           display: flex;
           flex-direction: column;
           width: 50%;
           padding-left: 50px;
+          @include mq(sp) { 
+            width: 100%;
+            padding-left: 0;
+          }
           .work-item_title {
             font-size: min(18px, calc( 18 / 1100 * 100vw ));
             font-weight: bold;
             margin-bottom: 10px;
+            @include mq(sp) { 
+              font-size: calc( 14 / 375 * 100vw );
+            }
             &:before {
               content: '/*';
               margin-right: 20px;
+              @include mq(sp) { 
+                margin-right: 10px;
+              }
             }
             &::after {
               content: '*/';
               margin-left: 20px;
+              @include mq(sp) { 
+                margin-left: 10px;
+              }
             }
           }
           .work-item_category {
@@ -117,6 +154,9 @@
               color: $main-color;
               padding: 0 10px;
               transition: .3s ease all;
+              @include mq(sp) { 
+                font-size: calc( 12 / 375 * 100vw );
+              }
               &:hover {
                 opacity: 0.6;
                 transition: .3s ease all;
@@ -132,6 +172,9 @@
                 font-weight: bold;
                 border-bottom: 1px solid $main-color;
                 padding-bottom: 10px;
+                @include mq(sp) { 
+                  font-size: calc( 14 / 375 * 100vw );
+                }
                 &:before {
                   content: '//';
                   margin-right: 10px;
@@ -147,6 +190,9 @@
                 .detail-item {
                   font-size: 14px;
                   font-weight: bold;
+                  @include mq(sp) { 
+                    font-size: calc( 12 / 375 * 100vw );
+                  }
                   a {
                     display: inline-block;
                     padding: 5px 10px;
@@ -165,6 +211,9 @@
                 margin-top: 10px;
                 font-size: 14px;
                 font-weight: bold;
+                @include mq(sp) { 
+                  font-size: calc( 12 / 375 * 100vw );
+                }
               }
             }
           } // end work-item_detail
@@ -180,6 +229,9 @@
               font-weight: bold;
               color: $main-color;
               transition: .3s ease all;
+              @include mq(sp) { 
+                font-size: calc( 12 / 375 * 100vw );
+              }
               &:hover {
                 color: $white-color;
                 background-color: $main-color;
@@ -201,6 +253,10 @@
   background-color: #fff;
   padding: 30px 50px;
   border-radius: 4px;
+  @include mq(sp) { 
+    margin-top: 50px;
+    padding: 20px;
+  }
   .detail-box_title {
     display: block;
     font-size: min(24px, calc( 24 / 1100 * 100vw ));
@@ -208,6 +264,11 @@
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid $main-color;
+    padding-left: 2rem;
+    text-indent: -2rem;
+    @include mq(sp) { 
+      font-size: calc( 18 / 375 * 100vw );
+    }
     &:after {
       display: none;
     }
@@ -243,6 +304,9 @@
       color: $main-color;
       padding: 0 10px;
       transition: .3s ease all;
+      @include mq(sp) { 
+        font-size: calc( 12 / 375 * 100vw );
+      }
       &:hover {
         opacity: 0.6;
         transition: .3s ease all;
@@ -259,6 +323,9 @@
     position: relative;
     opacity: 1;
     transition: .3s ease all;
+    @include mq(sp) { 
+      height: calc( 200 / 375 * 100vw );
+    }
     &:hover {
       opacity: 0.6;
       transition: .3s ease all;
@@ -278,6 +345,9 @@
       font-size: min(16px, calc( 16 / 1100 * 100vw ));
       font-weight: bold;
       margin-bottom: 15px;
+      @include mq(sp) { 
+        font-size: calc( 16 / 375 * 100vw );
+      }
       &:before {
         content: '/*';
         margin-right: 20px;
@@ -296,6 +366,9 @@
       font-weight: bold;
       color: $main-color;
       transition: .3s ease all;
+      @include mq(sp) { 
+        font-size: calc( 12 / 375 * 100vw );
+      }
       &:hover {
         background-color: $main-color;
         color: $white-bg;
@@ -309,10 +382,18 @@
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
+    @include mq(sp) { 
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+    }
     .work-description {
       width: calc(50% - 25px);
       display: flex;
       flex-direction: column;
+      @include mq(sp) { 
+        width: 100%;
+      }
       .des-wrap {
         margin-bottom: 30px;
         .des-title {
@@ -321,6 +402,9 @@
           border-bottom: 1px solid $main-color;
           margin-bottom: 10px;
           padding-bottom: 10px;
+          @include mq(sp) { 
+            font-size: calc( 16 / 375 * 100vw );
+          }
           &:before {
             content: '//';
             margin-right: 10px;
@@ -394,6 +478,9 @@
     transform: translate(-50%, -50%);
     border-radius: 4px;
     overflow: hidden;
+    @include mq(sp) { 
+      width: 95%;
+    }
     img {
       width: 100%;
       height: auto;

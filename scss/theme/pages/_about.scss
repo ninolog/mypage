@@ -7,6 +7,10 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    @include mq(sp) { 
+      flex-direction: column;
+      align-items: center;
+    }
     .image-wrap {
       display: flex;
       flex-direction: column;
@@ -20,6 +24,10 @@
         border-radius: 50%;
         overflow: hidden;
         border: 1px solid $main-color;
+        @include mq(sp) { 
+          width: 220px;
+          height: 220px;
+        }
       }
       .image-description {
         margin-top: 20px;
@@ -31,6 +39,7 @@
         }
       }
       .sns-area {
+        display: flex;
         margin-top: 30px;
         a {
           display: inline-block;
@@ -49,8 +58,16 @@
     }
     .txt-wrap {
       margin-left: 100px;
+      @include mq(sp) { 
+        margin-left: 0;
+        margin-top: 70px;
+      }
       .txt-area {
         margin-bottom: 20px;
+        @include mq(sp) { 
+          text-align: center;
+          margin-bottom: 50px;
+        }
       }
       h3 {
         font-size: 20px;
@@ -70,9 +87,15 @@
       }
       dl {
         margin-bottom: 10px;
+        @include mq(sp) { 
+          margin-bottom: 20px;
+        }
         dt {
           font-size: 14px;
           font-weight: bold;
+          @include mq(sp) { 
+            font-size: calc( 16 / 375 * 100vw );
+          }
           &:before {
             content: '{--';
             margin-right: 5px;
@@ -85,6 +108,10 @@
         dd {
           margin: 10px 0;
           font-size: 14px;
+          @include mq(sp) { 
+            font-size: calc( 16 / 375 * 100vw );
+            margin: 15px 0;
+          }
           &:before {
             content: '//';
             margin-right: 10px;

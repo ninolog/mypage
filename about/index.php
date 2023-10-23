@@ -27,7 +27,7 @@
           <div class="txt-area">
             <h3>Detail</h3>
             <p>
-              とある田舎のエンジニア。好きなことで生きていく。<br>
+              とある田舎のエンジニア。<br class="sp-block">好きなことで生きていく。<br>
               しかしChatGPTなしでは生きられない。
             </p>
             <dl>
@@ -50,7 +50,7 @@
           <div class="txt-area">
             <h3>Site</h3>
             <p>
-              思いつきで作成したサイトのため、コンテンツ迷子中。<br>
+              思いつきで作成したサイトのため、<br class="sp-block">コンテンツ迷子中。
             </p>
           </div>
         </div><!-- /txt-wrap -->
